@@ -10,7 +10,7 @@ server:
      registrer-with-eureka: false
      fetch-registry: false
    server:
-     wait-time-in-ms-when-sync-empy:
+     wait-time-in-ms-when-sync-empy: 0
 
 management:
   endpoints:
@@ -26,5 +26,5 @@ logging:
    level:
      org.springframework.cloud.config: DEBUG
      org.springframework.security: DEBUG
+     org.springframework.web.reactive.function.client.ExchangeFuncions: DEBUG
 
-     org.springframework.web.reactive.funcion.client.ExchangeFuncions: DEBUG
